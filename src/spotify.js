@@ -2,7 +2,7 @@
 
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
-const redirectUri = "https://spotify-clone-efa89.firebaseapp.com/";
+const redirectUri = "https://spotify-clone-efa89.web.app/";
 
 const clientId = "61130758384544778c5b50fd01a2a7bd";
 
@@ -27,6 +27,5 @@ export const getTokenFromUrl = () => {
     }, {});
 };
 
-<console.log>testing</console.log>
 
 export const loginUrl = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`;
